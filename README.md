@@ -1,0 +1,47 @@
+                          rmdir /s /q "C:\xampp\htdocs\backend_project_2025\LMS-Adaptive-Quizzes-AI-Backend"
+
+git clone https://github.com/KDA-Creative/Interactive-Campus-Navigation-Kiosk-in-Eastern-Visayas-State-University-Ormoc-Main-Campus.git
+git branch -a
+git switch Test-System
+git switch -c feature/logout-redirect 
+git switch -c feature/auth
+git switch feature/auth
+git switch feature/save_building_data
+git add .
+git commit -m 'report_v.1'
+git push
+git commit -m 'backend-analytics-latest'
+git commit -m 'Manage account - loading - crud'
+git commit -m 'Save Buildings Data in file'
+git commit -m 'logout - redirect in web'
+git switch -c feature/backend-analytics
+git switch -c feature/backend-analytics-latest
+git switch -c feature/manage-account-crud
+git switch feature/save_building_data
+git switch -c feature/save_building_data
+git push -u origin feature/backend-analytics
+git push -u origin feature/manage-account-crud
+git push -u origin feature/logout-redirect
+git push -u origin feature/auth
+git push -u origin feature/save_building_data
+git push -u origin feature/backend-analytics-latest
+
+
+git branch -d feature/save_building_data
+git branch -D feature/save_building_data
+git push origin --delete feature/save_building_data
+git push origin --delete feature/auth
+git push origin --delete feature/logout-redirect
+git branch -d feature/save_building_data
+git branch -d feature/logout-redirect
+git branch -d logout-redirect
+git branch -d feature/auth
+
+cd backend && npm run dev 
+cd desktop && npm run dev
+cd web && npm run dev 
+
+
+cd backend && npm i && npm run dev 
+cd desktop && npm i && npm run dev 
+cd web && npm i && npm run dev 
